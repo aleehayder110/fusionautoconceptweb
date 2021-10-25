@@ -875,7 +875,7 @@ testimonial section style */
     background-size: cover;
     background-attachment: fixed;
     background-position:0 71.9125px ;
-    padding: 10.375rem 0;
+    padding: 5.375rem 0;
 }
 /* new Gallary-section design */
 .item-image {
@@ -1002,8 +1002,8 @@ border-color: var(--orange-color);
       position: fixed;
       bottom: 0;
       right: 0;
-      width: 70px;
-      height: 70px;
+      width: 50px;
+      height: 50px;
       z-index: 100;
       display: none;
       text-decoration: none;
@@ -1011,7 +1011,7 @@ border-color: var(--orange-color);
       background-color: transparent;
   }
   .back-to-top i {
-      font-size: 50px;
+      font-size: 30px;
   }
 
 
