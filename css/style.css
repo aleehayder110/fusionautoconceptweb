@@ -287,8 +287,8 @@ p {
     border-color: var(--orange-color);
 }
 .wrapper {
-    padding-top: 5.25rem;
-    padding-bottom: 5.25rem;
+    padding-top: 3.25rem;
+    padding-bottom: 3.25rem;
 }
 .text-content {
     width: 70%;
@@ -358,7 +358,7 @@ p {
 
 /* appointment-section */
 .appointment-section{
-    padding: 0%;  
+    padding: 3%;  
 }
 .item {
     background-color: var(--orange-color);
@@ -1011,7 +1011,7 @@ border-color: var(--orange-color);
       background-color: transparent;
   }
   .back-to-top i {
-      font-size: 60px;
+      font-size: 50px;
   }
 
 
@@ -1053,7 +1053,7 @@ border-color: var(--orange-color);
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: #000;
 
 
     /* Center slide text vertically */
@@ -1077,4 +1077,5 @@ border-color: var(--orange-color);
     height: 100%;
     border-radius: .5rem;
     object-fit: cover;
+    border: 1px solid #FF8C00;
   }
