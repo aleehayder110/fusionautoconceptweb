@@ -89,3 +89,19 @@ var swiper = new Swiper(".mySwiper", {
     
      } 
   });
+  var swiper = new Swiper('.blog-slider', {
+    spaceBetween: 30,
+    effect: 'fade',
+    loop: true,
+    mousewheel: {
+      invert: false,
+    },
+    // autoHeight: true,
+    loop:true,
+    autoplay:{
+        delay:3000,
+        disableOnInteraction:false,
+    },
+  });
+
+
