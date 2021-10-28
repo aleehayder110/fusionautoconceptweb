@@ -48,7 +48,7 @@
     }
 }
 
-@media (maz-width:330px){
+@media (max-width:330px){
     .testimonial-section .carousel-item{
         padding: 13rem 3.125rem;
     }
@@ -57,5 +57,8 @@
     }
     .bg-video-wrap .text-area h5 {
         font-size: 2rem;
+    }
+    .swiper-slide .content .caption{
+        display: none;
     }
 }
