@@ -419,6 +419,7 @@ p {
     min-height: 100vh;
     z-index: 1;
     overflow: hidden;
+    margin-top: 30px;
 }
 .bg-video-wrap .text-area{
     text-transform: uppercase;
