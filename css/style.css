@@ -1145,7 +1145,7 @@ border-color: var(--orange-color);
     .blog-slider {
         min-height: 500px;
         height: auto;
-        margin: 180px auto;
+        margin: 180px auto 45px auto;
    }
 }
 @media screen and (max-height: 500px) and (min-width: 992px) {
