@@ -55,4 +55,7 @@
     .appointment-card{
         width: 420px;
     }
+    .bg-video-wrap .text-area h5 {
+        font-size: 2rem;
+    }
 }
