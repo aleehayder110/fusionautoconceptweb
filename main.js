@@ -53,7 +53,7 @@ AOS.init();
 //Heroimage
 $.fn.SnakeParallax=function(a){this.ready(function(){$('[snake-parallax="hero"]').css({"background-repeat":"no-repeat","background-size":"cover",overflow:"hidden",width:"100%",height:"100vh",position:"relative"}),$("head").append($("<style>body,html{width:100%;height:100%;}</style>"));var e=$.extend({backgroundPosition:"center top",backgroundImage:""},a);return $('[snake-parallax="hero"]').css({backgroundPosition:e.backgroundPosition,backgroundImage:e.backgroundImage})}),this.scroll(function(){var a=$(document).scrollTop().valueOf()/2;$('[snake-parallax="hero"]').css({height:"calc(100vh - "+Math.round(a)+"px)"})})};
 
-//  Initialize Swiper 
+//  Initialize Swiper (image slider)
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
@@ -71,18 +71,18 @@ var swiper = new Swiper(".mySwiper", {
     breakpoints: {  
    
         // when window width is <= 320px     
-        320: {       
+        285: {       
            slidesPerView: 1,
            spaceBetween: 10     
         },     
         // when window width is <= 480px     
-        // 480: {       
-        //    slidesPerView: 2,       
-        //    spaceBetween: 20     
-        // },   
+        480: {       
+           slidesPerView: 2,       
+           spaceBetween: 20     
+        },   
     
         // when window width is <= 640px     
-        640: {       
+        767: {       
            slidesPerView: 3,       
            spaceBetween: 30     
         } 
@@ -120,9 +120,7 @@ var swiper = new Swiper(".mySwiper", {
       slides[index].classList.add('active');
   }
 
-  
-
-  // Params
+  // section -About -us slides
 var sliderSelector = '.swiper-container',
 options = {
   init: false,
@@ -167,30 +165,3 @@ var mySwiper = new Swiper(sliderSelector, options);
 mySwiper.init();
 
 //new ticker
-$(function () {
-  var $ticker = $('#news-ticker'),
-    $first = $('li:first-child', $ticker);
-  
-  // put an empty space between each letter so we can 
-  // use break word
-  $('a', $ticker).each(function () {
-      var $this = $(this),
-        text = $this.text();
-     $this.html(text.split('').join('&#8203;'));
-  });
-  
-  // begin the animation
-  function tick($el) {
-      $el.addClass('tick')
-        .on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
-            
-          $el.removeClass('tick');
-            var $next = $el.next('li');
-            $next = $next.length > 0 ? $next : $first;
-          tick($next);
-      });
-  }
-      
-  tick($first);
-  
-});

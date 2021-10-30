@@ -121,19 +121,19 @@
                         <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
+                        <a class="nav-link" href="#about-slide">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#testimonial">Reviews</a>
+                        <a class="nav-link" href="#myCarousel">Reviews</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#faq">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Career</a>
+                        <a class="nav-link" href="#news-ticker">Career</a>
                     </li>
                     <li><button class="main-btn">+02 555 0750</button></li>
                 </ul>
@@ -145,6 +145,7 @@
     <!-- Section-1 top banner -->
        <div class="bg-video-wrap" id="home">
            <video src="./images/fusion-video-8.mp4" loop muted autoplay ></video>
+
            <div class="overlay" ></div>
            <div class="content text-area">
              <!-- <h1>FUSION AUTO CONCEPT</h1> -->
@@ -228,13 +229,13 @@
     </section>
 
      <!-- section-3 about -->
-     <div class="wrapper">
+     <div id="about-slide" class="wrapper">
        <div class="container">
         <div class="text-center pb-4">
             <h2>Peelable Auto Paint</h2>
             <p style="color: white;">Don’t take our word for it. Here’s what our customers feel about Fusion Auto Concept.</p>
         </div>
-       <section class="swiper-container loading">
+       <section  class="swiper-container loading">
          <div class="swiper-wrapper">
           <div class="swiper-slide" style="background-image:url(./images/fusion-webimage-16.jpg)">
             <img src="./images/fusion-webimage-16.jpg" class="entity-img" />
@@ -633,15 +634,16 @@
      <!-- new ticker -->
         <section id="news-ticker">
             <div class="container">
-                <div class="ticker-wrap">
-                 <div class="ticker-heading">Breaking News</div>
-                  <div class="ticker">
-                   <div class="ticker__item">Letterpress chambray brunch.</div>
-                   <div class="ticker__item">Vice mlkshk crucifix beard chillwave meditation hoodie asymmetrical Helvetica.</div>
-                   <div class="ticker__item">Ugh PBR&B kale chips Echo Park.</div>
-                   <div class="ticker__item">Gluten-free mumblecore chambray mixtape food truck. </div>
-                   </div>
-                 </div>
+                <div class="ticker-wrapper-h">
+                    <div class="heading">Trending Now</div>
+                    
+                    <ul class="news-ticker-h">
+                        <li><a href="#">What is Lorem Ipsum?</a></li>
+                        <li><a href="#">Why do we use it?</a></li>
+                        <li><a href="#">Where does it come from?</a></li>
+                        <li><a href="#">Where can I get some?</a></li>
+                    </ul>
+                </div>
                 
             </div>
         </section>

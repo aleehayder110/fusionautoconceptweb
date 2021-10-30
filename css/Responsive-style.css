@@ -62,3 +62,16 @@
         display: none;
     }
 }
+
+@media (min-aspect-ratio: 16/9){
+     .bg-video-wrap{
+         width: 100%;
+         height: 100vh;
+     }
+}
+@media (max-aspect-ratio: 16/9){
+    .bg-video-wrap{
+        width: auto;
+        height: 100vh;
+    }
+}
