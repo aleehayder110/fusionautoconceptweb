@@ -407,6 +407,126 @@ p {
     letter-spacing: 1px;
 }
 
+/* chairman section  */
+.sidebar0{
+    width: 60px;
+    height: 100%;
+    padding: 15px 0;
+    box-sizing: border-box;
+    background-color: #ddaa44;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.review-card0 {
+    padding: 40px 20px 20px 70px;
+    height: 300px;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+}
+.review-card0 h3{
+    color: #777;
+    line-height: 22px;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+.review-card0 p{
+    color: #777;
+    line-height: 22px;
+    margin-bottom: 0px;
+}
+.review-profile0 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .review-profile0 img {
+      width: 70px;
+      border-radius: 50%;
+      margin-right: 20px;
+  }
+
+  /* staff section */
+.staff-hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.review-box{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: -10px 10px 40px rgba(0,0,0,0.25);
+    position: relative;
+    overflow: hidden;
+}
+#review-slide{
+    width: 100%;
+    padding-right: 60px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.review-card{
+    padding: 40px;
+    height: 300px;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+}
+.review-card h3{
+    color: #777;
+    line-height: 22px;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+.review-card p{
+    color: #777;
+    line-height: 22px;
+    margin-bottom: 0px;
+}
+
+.review-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.review-profile img {
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.sidebar{
+  width: 60px;
+  height: 100%;
+  padding: 15px 0;
+  box-sizing: border-box;
+  background-color: #ddaa44;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar img {
+    width: 25px;
+    padding: 2px;
+    background-color: #fff;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
 /* video design */
 .bg-video-wrap{
     overflow: hidden;
@@ -538,17 +658,6 @@ p {
     padding:0px 40px;
     margin-top: 1rem; 
     letter-spacing: 5px;
-}
-
-
-/* section-2 counter design */
-.counter-section{
-    background-color: var(--orange-color);
-    padding: 2.5rem 0;
-}
-.counter-section p {
-    color: var(--white-color);
-    text-transform: uppercase;
 }
 
 /* section-3 about design */
@@ -909,6 +1018,7 @@ testimonial section style */
     background-attachment: fixed;
     background-position:0 71.9125px ;
     padding: 5.375rem 0;
+   
 }
 /* new Gallary-section design */
 .item-image {

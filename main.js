@@ -164,4 +164,21 @@ var mySwiper = new Swiper(sliderSelector, options);
 // Initialize slider
 mySwiper.init();
 
-//new ticker
+//Section about-Hero-image
+var slide = document.getElementById("review-slide");
+var upArrow = document.getElementById("upArrow");
+var downArrow = document.getElementById("downArrow");
+
+let x = 0;
+ upArrow.onclick = function(){
+   if(x > "-600"){
+    x = x - 300;
+    slide.style.top = x + "px";
+   }
+ }
+ downArrow.onclick = function(){
+  if(x < 0){
+   x = x + 300;
+   slide.style.top = x + "px";
+  }
+}
