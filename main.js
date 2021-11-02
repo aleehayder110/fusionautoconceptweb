@@ -129,7 +129,7 @@ options = {
   slidesPerView: 2, // or 'auto'
   // spaceBetween: 10,
   centeredSlides : true,
-  effect: 'coverflow', // 'cube', 'fade', 'coverflow',
+  effect: 'cube', // 'cube', 'fade', 'coverflow',
   coverflowEffect: {
     rotate: 50, // Slide rotate in degrees
     depth: 0, // Depth offset in px (slides translate in Z axis)
@@ -147,7 +147,7 @@ options = {
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    1023: {
+    965: {
       slidesPerView: 1,
       spaceBetween: 0
     }
@@ -164,7 +164,7 @@ var mySwiper = new Swiper(sliderSelector, options);
 // Initialize slider
 mySwiper.init();
 
-//Section about-Hero-image
+//Section staff
 var slide = document.getElementById("review-slide");
 var upArrow = document.getElementById("upArrow");
 var downArrow = document.getElementById("downArrow");
