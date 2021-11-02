@@ -697,8 +697,8 @@ p {
 }
 .story-section {
     width: 100%;
-    height: 28.125rem;
-    background: url('../images/fusion-webimage-1.jpg' )no-repeat center;
+    height: 25.125rem;
+    background: url('../images/fusion-webimage-24-1.jpg' )no-repeat center;
     background-size: cover;
     padding-top: 100px;
     text-align: center;
@@ -1198,8 +1198,6 @@ border-color: var(--orange-color);
     text-align: center;
     font-size: 18px;
     background: #000;
-
-
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1502,7 +1500,7 @@ border-color: var(--orange-color);
   
   .swiper-container {
     width: 100%;
-    height: 28vw;
+    height: 35vw;
     transition: opacity 0.6s ease;
     /* background-color: #ddaa44; */
     border-radius: 5px;
