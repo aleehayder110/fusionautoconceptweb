@@ -126,7 +126,7 @@ options = {
   init: false,
   loop: true,
   speed:800,
-  slidesPerView: 2, // or 'auto'
+  slidesPerView: 1, // or 'auto'
   // spaceBetween: 10,
   centeredSlides : true,
   effect: 'cube', // 'cube', 'fade', 'coverflow',
@@ -147,10 +147,10 @@ options = {
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    965: {
-      slidesPerView: 1,
-      spaceBetween: 0
-    }
+    // 1023: {
+    //   slidesPerView: 1,
+    //   spaceBetween: 0
+    // }
   },
   // Events
   on: {
