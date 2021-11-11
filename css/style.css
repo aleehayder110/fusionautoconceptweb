@@ -1543,6 +1543,10 @@ border-color: var(--orange-color);
   }
   .swiper-slide .entity-img {
     display: none;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
   }
   .swiper-slide .content {
     position: absolute;
