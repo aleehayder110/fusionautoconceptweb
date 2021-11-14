@@ -416,7 +416,7 @@ p {
 .item p{
     text-align: left;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 350;
     color: var(--white-color);
     line-height: 1.75rem;
     letter-spacing: 1px;
@@ -439,7 +439,7 @@ p {
 }
 .review-card0 {
     padding: 40px 20px 20px 70px;
-    height: 300px;
+    height: 350px;
     box-sizing: border-box;
     background: #fff;
     position: relative;
@@ -454,11 +454,12 @@ p {
     color: #777;
     line-height: 22px;
     margin-bottom: 0px;
+    font-size: 12px;
 }
 .review-profile0 {
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .review-profile0 img {
       width: 70px;
@@ -476,7 +477,7 @@ p {
 }
 .review-box{
     width: 100%;
-    height: 300px;
+    height: 350px;
     border-radius: 10px;
     box-shadow: -10px 10px 40px rgba(0,0,0,0.25);
     position: relative;
@@ -484,7 +485,7 @@ p {
 }
 #review-slide{
     width: 100%;
-    padding-right: 60px;
+    padding-right: 30px;
     box-sizing: border-box;
     position: absolute;
     top: 0;
@@ -493,7 +494,7 @@ p {
 }
 .review-card{
     padding: 40px;
-    height: 300px;
+    height: 350px;
     box-sizing: border-box;
     background: #fff;
     position: relative;
@@ -508,12 +509,14 @@ p {
     color: #777;
     line-height: 22px;
     margin-bottom: 0px;
+    font-size: 12px;
+    
 }
 
 .review-profile {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .review-profile img {
     width: 70px;
