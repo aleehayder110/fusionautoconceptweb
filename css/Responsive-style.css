@@ -61,6 +61,15 @@
     .review-card p {
         font-size: 14px;
     }
+    #slideshow{
+        border-radius: 15px;
+    }
+    .slidebtn i{
+        font-size: 30px;
+    }
+    .slider-dots li{
+        font-size: 35px;
+    }
      
 }
 
@@ -76,6 +85,15 @@
     }
     .swiper-slide .content .caption{
         display: none;
+    }
+    #slideshow{
+        border-radius: 10px;
+    }
+    .slidebtn i{
+        font-size: 30px;
+    }
+    .slider-dots li{
+        font-size: 25px;
     }
     
     
