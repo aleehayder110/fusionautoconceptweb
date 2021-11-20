@@ -420,8 +420,11 @@ p {
 }
 
 /* appointment-section */
+#appointment {
+  background-image: url("../images/fusionImage.jpg");
+}
 .appointment-section{
-    padding: 3%;  
+  margin-top: -60px; 
 }
 .item {
     background-color: var(--orange-color);
@@ -429,7 +432,6 @@ p {
     border: 1px solid rgb(0, 0, 0);
     padding: 20px;
     transition: 0.3s;
-
 }
 .item:hover{
     transform: scale(1.05);
@@ -443,13 +445,52 @@ p {
     text-align: center;
 }
 .item p{
-    text-align: left;
+    text-align: center;
     font-size: 14px;
     font-weight: 350;
     color: var(--white-color);
     line-height: 1.75rem;
     letter-spacing: 1px;
 }
+select.minimal {
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+select.minimal:focus {
+  background-image:
+    linear-gradient(45deg, green 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, green 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+
 
 /* chairman section  */
 .sidebar0{
@@ -474,13 +515,13 @@ p {
     position: relative;
 }
 .review-card0 h3{
-    color: #777;
+    color: #3c4043;
     line-height: 22px;
     font-size: 16px;
     margin-bottom: 0px;
 }
 .review-card0 p{
-    color: #777;
+    color: #3c4043;
     line-height: 22px;
     margin-bottom: 0px;
     font-size: 12px;
@@ -529,13 +570,13 @@ p {
     position: relative;
 }
 .review-card h3{
-    color: #777;
+    color: #3c4043;
     line-height: 22px;
     font-size: 16px;
     margin-bottom: 0px;
 }
 .review-card p{
-    color: #777;
+    color: #3c4043;
     line-height: 22px;
     margin-bottom: 0px;
     font-size: 12px;
@@ -723,10 +764,10 @@ p {
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
-    padding: 10px;
+
 }
 .video-play {
-    height: 250px;
+    height: 230px;
     width: 350px;
     border-radius: 5px;
     border: 5px solid #fff;
@@ -776,8 +817,8 @@ p {
 /* section-3 story-section */
 .story-section {
     width: 100%;
-    height: 25.125rem;
-    background: #ddaa44;
+    height: 37.125rem;
+    background-color: #ddaa44;
     /* background: url('../images/fusion-webimage-24-1.jpg' )no-repeat center; */
     background-size: cover;
     padding-top: 10px;
@@ -785,10 +826,6 @@ p {
 }
 .form-group label{
   text-align: left;
-}
-.iti {
-  position: relative;
-  display: block;
 }
 .story-section h2 {
     color: var(--orange-color);
@@ -835,7 +872,7 @@ p {
   .blog-slider {
       min-height: 500px;
       height: auto;
-      margin: 180px auto 45px auto;
+      margin: 150px auto 45px auto;
  }
 }
 @media screen and (max-height: 500px) and (min-width: 992px) {
@@ -1063,7 +1100,6 @@ p {
       width: 30px;
  }
 }
-
 
 /* FAQ Section design */
 .accordion .card {
@@ -1977,3 +2013,4 @@ opacity: 1;
 .slider-dots li.active-dot {
   color: #ddaa44;
 }
+
