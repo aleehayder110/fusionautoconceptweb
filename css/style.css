@@ -491,7 +491,6 @@ select:-moz-focusring {
 }
 
 
-
 /* chairman section  */
 .sidebar0{
     width: 60px;
@@ -817,7 +816,7 @@ select:-moz-focusring {
 /* section-3 story-section */
 .story-section {
     width: 100%;
-    height: 37.125rem;
+    height: 42.125rem;
     background-color: #ddaa44;
     /* background: url('../images/fusion-webimage-24-1.jpg' )no-repeat center; */
     background-size: cover;
@@ -2014,3 +2013,13 @@ opacity: 1;
   color: #ddaa44;
 }
 
+/* booking form */
+.container .icon {
+  position: relative;
+  float: left;
+  margin-left: 8px;
+  padding-right: 8px;
+  margin-top: -24px;
+  z-index: 2;
+  color: #222222;
+}

@@ -390,10 +390,10 @@ $(document).ready(function(){
     const phoneInputField = document.querySelector("#phone");
     const phoneInput = window.intlTelInput(phoneInputField, {
         onlyCountries: ["AE"],
-     utilsScript:
-       "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
    });
 
+   document.getElementById('form').addEventListener('submit', sendForm);
 //    var input = document.querySelector("#phone");
 //     window.intlTelInput(input, {
 //       // allowDropdown: false,
@@ -432,5 +432,11 @@ $(document).ready(function(){
   });
 
 
- //
+ //oppointment form
+//    var e = document.getElementById("inputState");
+//    var val1 = e.options[e.selectedIndex].value;
+//    var txt = e.options[e.selectedIndex].text;
+
+//     document.write("<br />Selected option Value: "+ val1);
+//      document.write("<br />Selected option Text: "+ txt);
  
