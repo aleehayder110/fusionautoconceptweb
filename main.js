@@ -433,10 +433,10 @@ $(document).ready(function(){
 
 
 //  oppointment form
-   var e = document.getElementById("inputState");
-   var val1 = e.options[e.selectedIndex].value;
-   var txt = e.options[e.selectedIndex].text;
+//    var e = document.getElementById("inputState");
+//    var val1 = e.options[e.selectedIndex].value;
+//    var txt = e.options[e.selectedIndex].text;
 
-    document.write("<br />Selected option Value: "+ val1);
-     document.write("<br />Selected option Text: "+ txt);
+//     document.write("<br />Selected option Value: "+ val1);
+//      document.write("<br />Selected option Text: "+ txt);
  
