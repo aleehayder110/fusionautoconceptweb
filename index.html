@@ -40,7 +40,9 @@
          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>        
          <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
-         
+         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
                  <!-----international Sheet-->
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" />
          <link   rel="stylesheet" href="css/intlTelInput.css">
@@ -429,19 +431,22 @@
                         <div class="form-group text-left col-md-4">
                            <div class="form-group"> <!-- Date input -->
                             <label class="control-label" for="date">Pick a Date</label>
-                            <input class="form-control" id="datetimepicker"  name="datetimepicker" placeholder="DD/MM/YYYY" type="text" autocomplete="off" required="required"/>
-                            
+                            <div class="input-group input-append date" id="datePicker">
+                              <input type="date" name="bday" max="3000-12-31" placeholder="DD/MM/YYYY"
+                                     min="1000-01-01" class="form-control">
+                               </div>
+                            </div>
                           </div>
-                        </div>
-
+                        
                     </div>
 
-                    <div class="form-group text-left ">
-                      <label for="control-label">Select a Service
+                    <div class="form-row">
+                      <div class="form-group col-md-4 text-left">
+                      <label for="control-label">Select a Service</label>
                       
-                        <select type="select" name="InputState" id="inputState" class="form-control minimal" required="required">
+                        <select name="InputState" id="inputState" class="form-control minimal" required="required">
                           <!-- <span id="name" class="text-danger"></span> -->
-                          <option value="">Choose...</option>
+                          <option selected>Choose...</option>
                           <option value="service1">Ceramic Coating</option>
                           <option value="service2">High Quality Car Wash</option>
                           <option value="service3">Car detailing</option>
@@ -452,23 +457,19 @@
                           <option value="service8">SMART REPAIR</option>
                           <option value="service9">Window Tinting</option>
                           <option value="service10">Paitless Dent Removal</option>
-                        </select></label>
+                        </select>
                       </div>
                     <!--  row   -->
-                
-                
-                    <div class="row">
-                      
+                 
                       <!--  col-md-12   -->
 
-                        <div class="form-group text-left col-md-12">
+                        <div class="form-group text-left col">
                           <label for="inputAddress">Address</label>
                           <input type="text" class="form-control" name="inputAddress" id="inputAddress" placeholder="1234 Main St" autocomplete="off" required="required">
                           <span id="name" class="text-danger"></span>
                        </div>
                 
-                    </div>
-
+                  </div>
 
                     <div class="row">
                       <!--  col-md-12   -->

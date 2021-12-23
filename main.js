@@ -396,24 +396,51 @@ $(document).ready(function(){
    document.getElementById('form').addEventListener('submit', sendForm);
 
 
-$(document).ready(function(){
-    var date_input=$('input[name="date"]'); //our date input has the name "date"
-    var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
-    var options={
-      format: 'mm/dd/yyyy',
-      container: container,
-      todayHighlight: true,
-      autoclose: true,
-    };
-    date_input.datepicker(options);
-  });
-
-
 //  oppointment form
-//    var e = document.getElementById("inputState");
-//    var val1 = e.options[e.selectedIndex].value;
-//    var txt = e.options[e.selectedIndex].text;
+   var e = document.getElementById("inputState");
+   var val1 = e.options[e.selectedIndex].value;
+   var txt = e.options[e.selectedIndex].text;
 
-//     document.write("<br />Selected option Value: "+ val1);
-//      document.write("<br />Selected option Text: "+ txt);
+    document.write("<br />Selected option Value: "+ val1);
+    document.write("<br />Selected option Text: "+ txt);
  
+    //date picker
+    $(document).ready(function() {
+        $('#datePicker')
+            .datepicker({
+                format: 'mm/dd/yyyy'
+            })
+            .on('changeDate', function(e) {
+                // Revalidate the date field
+                $('#eventForm').formValidation('revalidateField', 'date');
+            });
+    
+        $('#eventForm').formValidation({
+            framework: 'bootstrap',
+            icon: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                name: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The name is required'
+                        }
+                    }
+                },
+                date: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The date is required'
+                        },
+                        date: {
+                            format: 'MM/DD/YYYY',
+                            message: 'The date is not a valid'
+                        }
+                    }
+                }
+            }
+        });
+    });
