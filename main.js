@@ -397,11 +397,9 @@ $(document).ready(function(){
 
 
 //  oppointment form
-    function selectFunction() { 
-      var result = document.getElementById("selectValue");
-      var sltUser = result.value;
-      var sltUser = result.options[result.selectedIndex].text; 
-     } 
+          var e = document.getElementById("selectValue");
+          var strUser = e.value; // 2
+          var strUser = e.options[e.selectedIndex].text;
  
     //date picker
     $(document).ready(function() {
