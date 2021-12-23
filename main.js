@@ -397,8 +397,9 @@ $(document).ready(function(){
 
 
 //  oppointment form
-    var select = document.getElementById('selectValue');
-    var value = select.options[select.selectedIndex].value;
+    function selectFunction() { 
+      var result = document.getElementById("selectValue").value; 
+     } 
  
     //date picker
     $(document).ready(function() {
