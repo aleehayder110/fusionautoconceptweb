@@ -392,11 +392,9 @@ $(document).ready(function(){
         onlyCountries: ["AE"],
         utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
    });
-//  oppointment form
-
+//  oppointment Selected Service
           var e = document.getElementById("selectValue");
-          var strUser = e.value; // 2
-          var strUser = e.options[e.selectedIndex].text;
+          var sltVal= e.options[e.selectedIndex].text;
            console.log(strUser);
     //date picker
     
