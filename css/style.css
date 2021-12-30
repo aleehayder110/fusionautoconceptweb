@@ -1190,7 +1190,7 @@ select:-moz-focusring {
     -o-transition: all .3s ease-in-out;    
     transition: all .3s ease-in-out;
     padding: 5px;
-    z-index: 22222222;
+    z-index: 22;
 }
 
 .testim .arrow:before {
@@ -1216,7 +1216,7 @@ select:-moz-focusring {
     bottom: 60px;
     left: 0;
     display: block;
-    z-index: 3333;
+    z-index: 33;
     height: 12px;
 }
 
